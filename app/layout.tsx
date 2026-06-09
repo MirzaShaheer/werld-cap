@@ -4,7 +4,7 @@ import "./globals.css";
 // TODO(client): set this to the final production domain so the social-share
 // (Open Graph / Twitter) image and links resolve in unfurls. Until it's set,
 // previews point at this placeholder host.
-const SITE_URL = "https://werldcap.com";
+const SITE_URL = "https://werldcap.site";
 
 const TITLE = "Werld Cap $WERL — get pad 2 wach soccr";
 const DESCRIPTION =

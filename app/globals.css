@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts loaded via <link> in layout.tsx (graceful fallback if offline). */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* font stacks ----------------------------------------------------------- */
+  .font-impact {
+    font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", "Anton",
+      sans-serif;
+    letter-spacing: 0.01em;
+  }
+  .font-comic {
+    /* "Comic Neue" is web-loaded (layout.tsx) so non-desktop browsers without
+       Comic Sans MS still get a comic face instead of generic cursive. */
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue",
+      cursive;
+  }
+  .font-anton {
+    font-family: "Anton", Impact, sans-serif;
+  }
+  .font-marker {
+    font-family: "Permanent Marker", "Comic Sans MS", cursive;
+  }
+  .font-body {
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* deep-fried image filter ---------------------------------------------- */
+  .fried {
+    filter: contrast(1.35) saturate(2.2) brightness(1.05);
+  }
+
+  /* card tilts ------------------------------------------------------------ */
+  .tilt-l {
+    transform: rotate(-2deg);
+  }
+  .tilt-r {
+    transform: rotate(2deg);
+  }
+  .tilt-l:hover,
+  .tilt-r:hover {
+    transform: rotate(0deg);
+  }
+
+  /* MS-Paint hand-drawn border (wonky border-radius trick) --------------- */
+  .crayon-border {
+    border: 3px solid #1f2937;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  }
+
+  /* MS-Paint paper texture (pure CSS, no asset) -------------------------- */
+  .paper {
+    background-color: #fdfdf5;
+    background-image: radial-gradient(
+        rgba(0, 0, 0, 0.04) 1px,
+        transparent 1px
+      ),
+      radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 18px 18px, 18px 18px;
+    background-position: 0 0, 9px 9px;
+  }
+
+  /* animated "retard soccer" backdrop (PitchBackground.tsx) -------------- */
+  /* base for elements that cross the screen; duration/delay set inline */
+  .pitch-anim {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+  .pitch-ltr {
+    animation-name: pitch-run;
+  }
+  .pitch-rtl {
+    animation-name: pitch-run-rev;
+  }
+  .pitch-roll {
+    animation-name: pitch-roll;
+  }
+  .pitch-bob {
+    animation: pitch-bob 1.2s ease-in-out infinite;
+  }
+  .pitch-pulse {
+    animation: pitch-pulse 1.7s ease-in-out infinite;
+  }
+  /* strikers running into the goals (duration/delay set inline, synced w/ flash) */
+  .pitch-score-r {
+    animation-name: pitch-score-right;
+  }
+  .pitch-score-l {
+    animation-name: pitch-score-left;
+  }
+  /* 2-frame running leg cycle */
+  .stride-a {
+    animation: stride-a 0.3s steps(1) infinite;
+  }
+  .stride-b {
+    animation: stride-b 0.3s steps(1) infinite;
+  }
+  /* GOOOAL! flash (duration/delay set inline to match its striker) */
+  .pitch-goalflash {
+    animation-name: pitch-goalflash;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+/* keyframes for the soccer backdrop */
+@keyframes pitch-run {
+  from {
+    transform: translateX(-15vw);
+  }
+  to {
+    transform: translateX(115vw);
+  }
+}
+@keyframes pitch-run-rev {
+  from {
+    transform: translateX(115vw);
+  }
+  to {
+    transform: translateX(-15vw);
+  }
+}
+@keyframes pitch-roll {
+  from {
+    transform: translateX(-15vw) rotate(0deg);
+  }
+  to {
+    transform: translateX(115vw) rotate(1080deg);
+  }
+}
+@keyframes pitch-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes pitch-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.95;
+  }
+}
+
+/* striker dribbles in from the left, arrives at the right goal, then "scores"
+   (fades) — held off-frame the rest of the loop. Synced with pitch-goalflash. */
+@keyframes pitch-score-right {
+  0% {
+    transform: translateX(-18vw);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  74% {
+    transform: translateX(88vw);
+    opacity: 1;
+  }
+  82% {
+    transform: translateX(88vw);
+    opacity: 1;
+  }
+  88%,
+  100% {
+    transform: translateX(88vw);
+    opacity: 0;
+  }
+}
+@keyframes pitch-score-left {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  74% {
+    transform: translateX(4vw);
+    opacity: 1;
+  }
+  82% {
+    transform: translateX(4vw);
+    opacity: 1;
+  }
+  88%,
+  100% {
+    transform: translateX(4vw);
+    opacity: 0;
+  }
+}
+/* two stride frames toggled to fake running legs */
+@keyframes stride-a {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes stride-b {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+/* GOOOAL! flash — invisible until the striker hits the net (~80%), then pops */
+@keyframes pitch-goalflash {
+  0%,
+  76% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-4deg);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.2) rotate(-4deg);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1) rotate(-3deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) rotate(-3deg);
+  }
+}
+
+/* respect users who ask for less motion — freeze the backdrop */
+@media (prefers-reduced-motion: reduce) {
+  .pitch-anim,
+  .pitch-bob,
+  .pitch-pulse,
+  .stride-a,
+  .stride-b,
+  .pitch-goalflash {
+    animation: none;
+  }
+}

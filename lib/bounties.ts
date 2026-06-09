@@ -96,7 +96,7 @@ export const bounties: Bounty[] = [
     emoji: "⚽",
     description:
       "score a invisibel goal in a busy place then do a FULL siuuu + knee slide on the floor. no real ball aloud (we dont do crime). film the confused bystandrs.",
-    pumpUrl: config.links.pfBounty,
+    pumpUrl: "https://pump.fun/go/1dc65991-c900-4937-b51e-128bed8a145b",
   },
   {
     id: "penalti-vs-fridge",

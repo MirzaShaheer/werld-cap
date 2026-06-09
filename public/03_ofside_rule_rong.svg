@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640">
+  <defs>
+    <style>
+    .t{font-family:Impact,'Haettenschweiler','Arial Narrow Bold','Arial Black',sans-serif;font-weight:900;letter-spacing:.5px;}
+    .c{font-family:'Comic Sans MS','Comic Sans','Chalkboard SE','Marker Felt',cursive;}
+    .m{font-family:'Courier New',ui-monospace,monospace;font-weight:700;}
+</style>
+    <filter id="rough3" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.013" numOctaves="2" seed="21" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="paper3" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="24" result="f"/>
+      <feColorMatrix in="f" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs><rect x="0" y="0" width="640" height="640" rx="18" fill="#F4F0DC" filter="url(#paper3)"/><line x1="40" y1="20" x2="40" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="72" y1="20" x2="72" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="104" y1="20" x2="104" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="136" y1="20" x2="136" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="168" y1="20" x2="168" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="200" y1="20" x2="200" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="232" y1="20" x2="232" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="264" y1="20" x2="264" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="296" y1="20" x2="296" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="328" y1="20" x2="328" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="360" y1="20" x2="360" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="392" y1="20" x2="392" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="424" y1="20" x2="424" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="456" y1="20" x2="456" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="488" y1="20" x2="488" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="520" y1="20" x2="520" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="552" y1="20" x2="552" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="584" y1="20" x2="584" y2="620" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="40" x2="620" y2="40" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="72" x2="620" y2="72" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="104" x2="620" y2="104" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="136" x2="620" y2="136" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="168" x2="620" y2="168" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="200" x2="620" y2="200" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="232" x2="620" y2="232" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="264" x2="620" y2="264" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="296" x2="620" y2="296" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="328" x2="620" y2="328" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="360" x2="620" y2="360" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="392" x2="620" y2="392" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="424" x2="620" y2="424" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="456" x2="620" y2="456" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="488" x2="620" y2="488" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="520" x2="620" y2="520" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="552" x2="620" y2="552" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="584" x2="620" y2="584" stroke="#cdd6e6" stroke-width="1.5"/><line x1="20" y1="616" x2="620" y2="616" stroke="#cdd6e6" stroke-width="1.5"/><g filter="url(#rough3)"><line x1="70" y1="150" x2="560" y2="260" stroke="#E23B3B" stroke-width="6" stroke-dasharray="14 10"/><text x="430" y="150" class="c" font-size="20" fill="#E23B3B">ofside??</text><circle cx="140" cy="210" r="16" fill="none" stroke="#2E6BE0" stroke-width="5"/><circle cx="230" cy="290" r="16" fill="none" stroke="#2E6BE0" stroke-width="5"/><circle cx="320" cy="200" r="16" fill="none" stroke="#2E6BE0" stroke-width="5"/><circle cx="400" cy="300" r="16" fill="none" stroke="#E23B3B" stroke-width="5"/><circle cx="480" cy="210" r="16" fill="none" stroke="#E23B3B" stroke-width="5"/><path d="M177 237 L203 263 M203 237 L177 263" stroke="#E23B3B" stroke-width="5" stroke-linecap="round"/><path d="M257 187 L283 213 M283 187 L257 213" stroke="#E23B3B" stroke-width="5" stroke-linecap="round"/><path d="M347 277 L373 303 M373 277 L347 303" stroke="#E23B3B" stroke-width="5" stroke-linecap="round"/><path d="M437 237 L463 263 M463 237 L437 263" stroke="#E23B3B" stroke-width="5" stroke-linecap="round"/><path d="M150 330 C 250 380, 350 280, 470 350" stroke="#171513" stroke-width="5" fill="none"/><path d="M470 350 l-18 -4 l10 16 z" fill="#171513"/><path d="M520 180 C 480 120, 300 120, 250 170" stroke="#171513" stroke-width="4" fill="none"/><circle cx="110" cy="330" r="22" fill="#fff" stroke="#171513" stroke-width="5"/><path d="M110 314 l10 12 l-6 14 h-8 l-6 -14 z" fill="#171513"/><g transform="rotate(-8 470 130)"><text x="470" y="138" class="t" font-size="30" fill="#171513" text-anchor="middle">CORECT</text><line x1="405" y1="128" x2="535" y2="128" stroke="#E23B3B" stroke-width="6"/></g><line x1="540" y1="380" x2="470" y2="320" stroke="#171513" stroke-width="7" stroke-linecap="round"/><path d="M470 320 l-16 -2 l8 16 z" fill="#2E6BE0"/></g>
+  <g filter="url(#rough3)">
+    <rect x="20" y="20" width="600" height="600" rx="14" fill="none" stroke="#171513" stroke-width="11"/>
+    <rect x="33" y="33" width="574" height="574" rx="10" fill="none" stroke="#171513" stroke-width="3.5"/>
+    <path d="M576 33 L607 33 L607 64 Z" fill="#E23B3B" stroke="#171513" stroke-width="3.5"/>
+    <path d="M576 33 L607 64" stroke="#171513" stroke-width="3" fill="none"/>
+  </g>
+  <g filter="url(#rough3)" transform="rotate(-3 120 58)">
+    <rect x="44" y="36" width="152" height="46" rx="23" fill="#171513"/>
+    <circle cx="74" cy="59" r="11" fill="#2BE06A"/>
+    <circle cx="74" cy="59" r="11" fill="none" stroke="#0a8f3c" stroke-width="2"/>
+    <text x="96" y="68" class="t" font-size="27" fill="#FBFBEF">LIVE</text>
+  </g>
+  <g filter="url(#rough3)" transform="rotate(4 596 64)">
+    <rect x="514" y="44" width="82" height="40" rx="6" fill="#FBFBEF" stroke="#171513" stroke-width="4"/>
+    <text x="555.0" y="71" class="m" font-size="20" fill="#171513" text-anchor="middle">SKILL</text>
+  </g>
+  <g filter="url(#rough3)" transform="rotate(-6 126.0 395.0)">
+    <rect x="70" y="360" width="112" height="70" fill="#FFE873" stroke="#171513" stroke-width="3"/>
+    <text x="126.0" y="386" class="c" font-size="17" fill="#171513" text-anchor="middle">u may NOT</text><text x="126.0" y="408" class="c" font-size="17" fill="#171513" text-anchor="middle">be correct</text>
+  </g>
+  <g transform="rotate(-1.6 320 495)">
+    <g filter="url(#rough3)">
+      <path d="M48 442 L596 436 L600 552 L44 558 Z" fill="#171513"/>
+    </g>
+    <text x="320" y="480" class="t" font-size="44" fill="#FBFBEF" stroke="#171513" stroke-width="2.5" paint-order="stroke" text-anchor="middle">OFSIDE RULE</text><text x="320" y="525" class="t" font-size="44" fill="#FFCE2B" stroke="#171513" stroke-width="2.5" paint-order="stroke" text-anchor="middle">(rong)</text>
+  </g>
+  <g filter="url(#rough3)" transform="rotate(-13 122 506)">
+    <circle cx="122" cy="506" r="58" fill="#FFCE2B" stroke="#171513" stroke-width="7"/>
+    <circle cx="122" cy="506" r="46" fill="none" stroke="#E0A312" stroke-width="4" stroke-dasharray="2 7"/>
+    <text x="122" y="498" class="t" font-size="40" fill="#171513" text-anchor="middle">◎</text>
+    <text x="122" y="534" class="t" font-size="30" fill="#171513" text-anchor="middle">0.3</text>
+  </g>
+  <g filter="url(#rough3)" transform="rotate(-6 545 596)">
+    <rect x="486" y="578" width="118" height="34" rx="17" fill="#FBFBEF" stroke="#171513" stroke-width="3.5"/>
+    <text x="545" y="602" class="t" font-size="22" fill="#171513" text-anchor="middle">$WERL</text>
+  </g></svg>

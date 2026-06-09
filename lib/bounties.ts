@@ -13,6 +13,8 @@ export interface Bounty {
   /** ISO timestamp for the countdown (upcoming bounties only). */
   unlockAtIso?: string;
   emoji: string;
+  /** Bounty thumbnail in /public (falls back to the emoji if absent). */
+  image?: string;
   description: string;
   /** Where "Claim on Pumpfun" sends the user. */
   pumpUrl: string;
@@ -29,6 +31,7 @@ export const bounties: Bounty[] = [
   // ───────────────── ACTIVE ─────────────────
   {
     id: "famly-fit-chek",
+    image: "/01_famly_fit_chek.svg",
     title: "FAMLY FIT CHEK",
     category: "Fan Content",
     rewardSol: 0.5,
@@ -41,6 +44,7 @@ export const bounties: Bounty[] = [
   },
   {
     id: "screem-at-da-ref",
+    image: "/02_screem_at_da_ref.svg",
     title: "SCREEM WERLD CAP AT DA REF",
     category: "Vidio Challenge",
     rewardSol: 0.4,
@@ -53,6 +57,7 @@ export const bounties: Bounty[] = [
   },
   {
     id: "ofside-rule-rong",
+    image: "/03_ofside_rule_rong.svg",
     title: "DRAW THE OFSIDE RULE (rong)",
     category: "Skill Challenge",
     rewardSol: 0.3,
@@ -67,6 +72,7 @@ export const bounties: Bounty[] = [
   // ───────────────── UPCOMING ─────────────────
   {
     id: "kit-2-serius-place",
+    image: "/04_kit_2_serius_place.svg",
     title: "WEAR DA KIT 2 A SERIUS PLACE",
     category: "Fan Content",
     rewardSol: 0.5,
@@ -80,6 +86,7 @@ export const bounties: Bounty[] = [
   },
   {
     id: "gol-selebrashun",
+    image: "/05_gol_selebrasion.svg",
     title: "GOL SELEBRASHUN (in publik, alone)",
     category: "Vidio Challenge",
     rewardSol: 0.6,
@@ -93,6 +100,7 @@ export const bounties: Bounty[] = [
   },
   {
     id: "penalti-vs-fridge",
+    image: "/06_penalti_vs_fridge.svg",
     title: "PENALTI SHOOTOUT vs UR FRIDGE",
     category: "Skill Challenge",
     rewardSol: 0.45,

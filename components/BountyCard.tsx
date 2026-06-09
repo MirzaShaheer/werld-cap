@@ -17,14 +17,20 @@ export default function BountyCard({
 
   return (
     <article className={`${t.card} ${tiltClass} flex flex-col`}>
-      {/* thumbnail = big emoji tile (no asset dependency) */}
+      {/* thumbnail — real bounty art (square), shown as drawn (no fry);
+          falls back to the emoji tile if an image is missing */}
       <div
         aria-hidden="true"
-        className={`mb-3 flex h-32 items-center justify-center rounded-xl ${t.thumb} text-6xl ${
-          t.friedImg ? "fried" : ""
-        }`}
+        className={`mb-3 aspect-square overflow-hidden rounded-xl ${t.thumb}`}
       >
-        {bounty.emoji}
+        {bounty.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={bounty.image} alt="" className="h-full w-full object-cover" />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-7xl">
+            {bounty.emoji}
+          </div>
+        )}
       </div>
 
       <div className="mb-2 flex items-center justify-between gap-2">

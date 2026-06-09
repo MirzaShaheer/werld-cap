@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640">
+  <defs>
+    <style>
+    .t{font-family:Impact,'Haettenschweiler','Arial Narrow Bold','Arial Black',sans-serif;font-weight:900;letter-spacing:.5px;}
+    .c{font-family:'Comic Sans MS','Comic Sans','Chalkboard SE','Marker Felt',cursive;}
+    .m{font-family:'Courier New',ui-monospace,monospace;font-weight:700;}
+</style>
+    <filter id="rough2" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.013" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="paper2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="14" result="f"/>
+      <feColorMatrix in="f" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs><rect x="0" y="0" width="640" height="640" rx="18" fill="#FF3D7F"/><g filter="url(#rough2)"><circle cx="195" cy="250" r="80" fill="#ffd9c2" stroke="#171513" stroke-width="7"/><circle cx="170" cy="228" r="9" fill="#171513"/><circle cx="222" cy="228" r="9" fill="#171513"/><path d="M150 222 L186 232 M242 232 L208 222" stroke="#171513" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="196" cy="288" rx="34" ry="40" fill="#7a1020" stroke="#171513" stroke-width="6"/><rect x="178" y="256" width="36" height="11" rx="3" fill="#fff" stroke="#171513" stroke-width="2"/><ellipse cx="196" cy="318" rx="13" ry="18" fill="#c0392b"/><path d="M300 150 L335 175 L378 150 L372 198 L420 200 L378 232 L408 280 L352 262 L338 312 L310 268 L262 290 L286 240 L250 214 L300 206 Z" fill="#FFE873" stroke="#171513" stroke-width="6"/><text x="335" y="218" class="t" font-size="34" fill="#171513" text-anchor="middle">WEERLD</text><text x="335" y="252" class="t" font-size="34" fill="#E23B3B" text-anchor="middle">CAAAP!</text><circle cx="470" cy="300" r="16" fill="#ffe0c2" stroke="#171513" stroke-width="5"/><circle cx="463.6" cy="298.4" r="2.24" fill="#171513"/><circle cx="476.4" cy="298.4" r="2.24" fill="#171513"/><line x1="462.8" y1="307.2" x2="477.2" y2="307.2" stroke="#171513" stroke-width="4" stroke-linecap="round"/><path d="M454.0 320 L486.0 320 L482.8 358.4 L457.2 358.4 Z" fill="#111111" stroke="#171513" stroke-width="5"/><path d="M455.6 326 L442.8 345.6" stroke="#171513" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M484.4 326 L497.2 345.6" stroke="#171513" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M465.2 358.4 L455.6 385.59999999999997" stroke="#171513" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M474.8 358.4 L484.4 385.59999999999997" stroke="#171513" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="492" y="300" width="20" height="28" rx="3" fill="#FFD23F" stroke="#171513" stroke-width="3" transform="rotate(12 502 314)"/><circle cx="452" cy="300" r="7" fill="#fff" stroke="#171513" stroke-width="3"/><path d="M120 200 q-8 14 0 20 q8 -6 0 -20" fill="#36C5F0" stroke="#171513" stroke-width="2"/></g>
+  <g filter="url(#rough2)">
+    <rect x="20" y="20" width="600" height="600" rx="14" fill="none" stroke="#171513" stroke-width="11"/>
+    <rect x="33" y="33" width="574" height="574" rx="10" fill="none" stroke="#171513" stroke-width="3.5"/>
+    <path d="M576 33 L607 33 L607 64 Z" fill="#FFD23F" stroke="#171513" stroke-width="3.5"/>
+    <path d="M576 33 L607 64" stroke="#171513" stroke-width="3" fill="none"/>
+  </g>
+  <g filter="url(#rough2)" transform="rotate(-3 120 58)">
+    <rect x="44" y="36" width="152" height="46" rx="23" fill="#171513"/>
+    <circle cx="74" cy="59" r="11" fill="#2BE06A"/>
+    <circle cx="74" cy="59" r="11" fill="none" stroke="#0a8f3c" stroke-width="2"/>
+    <text x="96" y="68" class="t" font-size="27" fill="#FBFBEF">LIVE</text>
+  </g>
+  <g filter="url(#rough2)" transform="rotate(4 596 64)">
+    <rect x="514" y="44" width="82" height="40" rx="6" fill="#FBFBEF" stroke="#171513" stroke-width="4"/>
+    <text x="555.0" y="71" class="m" font-size="20" fill="#171513" text-anchor="middle">VIDIO</text>
+  </g>
+  <g filter="url(#rough2)" transform="rotate(-8 102.5 395.0)">
+    <rect x="60" y="360" width="85" height="70" fill="#FFE873" stroke="#171513" stroke-width="3"/>
+    <text x="102.5" y="386" class="c" font-size="17" fill="#171513" text-anchor="middle">min 10</text><text x="102.5" y="408" class="c" font-size="17" fill="#171513" text-anchor="middle">screems</text>
+  </g>
+  <g transform="rotate(-1.6 320 495)">
+    <g filter="url(#rough2)">
+      <path d="M48 442 L596 436 L600 552 L44 558 Z" fill="#171513"/>
+    </g>
+    <text x="320" y="480" class="t" font-size="44" fill="#FBFBEF" stroke="#171513" stroke-width="2.5" paint-order="stroke" text-anchor="middle">SCREEM AT</text><text x="320" y="525" class="t" font-size="44" fill="#FFCE2B" stroke="#171513" stroke-width="2.5" paint-order="stroke" text-anchor="middle">DA REF</text>
+  </g>
+  <g filter="url(#rough2)" transform="rotate(-13 122 506)">
+    <circle cx="122" cy="506" r="58" fill="#FFCE2B" stroke="#171513" stroke-width="7"/>
+    <circle cx="122" cy="506" r="46" fill="none" stroke="#E0A312" stroke-width="4" stroke-dasharray="2 7"/>
+    <text x="122" y="498" class="t" font-size="40" fill="#171513" text-anchor="middle">◎</text>
+    <text x="122" y="534" class="t" font-size="30" fill="#171513" text-anchor="middle">0.4</text>
+  </g>
+  <g filter="url(#rough2)" transform="rotate(-6 545 596)">
+    <rect x="486" y="578" width="118" height="34" rx="17" fill="#FBFBEF" stroke="#171513" stroke-width="3.5"/>
+    <text x="545" y="602" class="t" font-size="22" fill="#171513" text-anchor="middle">$WERL</text>
+  </g></svg>

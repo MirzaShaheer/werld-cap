@@ -68,6 +68,19 @@ export const bounties: Bounty[] = [
       "get a paper n pen n explane the ofside rule wif a drawin. u are NOT aloud to be correct — the ronger the betta. hold it next 2 a soccr ball n post.",
     pumpUrl: "https://pump.fun/go/3a825349-63fb-4b9c-a75d-bafcb51f4810",
   },
+  {
+    id: "gol-selebrashun",
+    image: "/05_gol_selebrasion.svg",
+    title: "GOL SELEBRASHUN (in publik, alone)",
+    category: "Vidio Challenge",
+    rewardSol: 0.6,
+    status: "live",
+    when: "LIVE NOW",
+    emoji: "⚽",
+    description:
+      "score a invisibel goal in a busy place then do a FULL siuuu + knee slide on the floor. no real ball aloud (we dont do crime). film the confused bystandrs.",
+    pumpUrl: "https://pump.fun/go/1dc65991-c900-4937-b51e-128bed8a145b",
+  },
 
   // ───────────────── UPCOMING ─────────────────
   {
@@ -83,20 +96,6 @@ export const bounties: Bounty[] = [
     description:
       "show up 2 sumwhere fancy (a weddin, a meetin, dinner wif the in-laws) in FULL kit + shin pads + boots. act compleetly normal. documant the faces. (nothin illegal pls.)",
     pumpUrl: config.links.pfBounty,
-  },
-  {
-    id: "gol-selebrashun",
-    image: "/05_gol_selebrasion.svg",
-    title: "GOL SELEBRASHUN (in publik, alone)",
-    category: "Vidio Challenge",
-    rewardSol: 0.6,
-    status: "upcoming",
-    when: "UNLOCKS @ ROUND OF 32",
-    unlockAtIso: "2026-06-29T17:00:00Z",
-    emoji: "⚽",
-    description:
-      "score a invisibel goal in a busy place then do a FULL siuuu + knee slide on the floor. no real ball aloud (we dont do crime). film the confused bystandrs.",
-    pumpUrl: "https://pump.fun/go/1dc65991-c900-4937-b51e-128bed8a145b",
   },
   {
     id: "penalti-vs-fridge",

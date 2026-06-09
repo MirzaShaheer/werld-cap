@@ -6,7 +6,7 @@ import "./globals.css";
 // previews point at this placeholder host.
 const SITE_URL = "https://werldcap.site";
 
-const TITLE = "Werld Cap $WERL — get pad 2 wach soccr";
+const TITLE = "Werld Cap $WerldCap — get pad 2 wach soccr";
 const DESCRIPTION =
   "The retard werld cup. Real bountys, real SOL, paid out on Pump.fun GO. Do dumb stuff, get paid.";
 

@@ -48,6 +48,6 @@
     <text x="122" y="534" class="t" font-size="30" fill="#171513" text-anchor="middle">0.4</text>
   </g>
   <g filter="url(#rough2)" transform="rotate(-6 545 596)">
-    <rect x="486" y="578" width="118" height="34" rx="17" fill="#FBFBEF" stroke="#171513" stroke-width="3.5"/>
-    <text x="545" y="602" class="t" font-size="22" fill="#171513" text-anchor="middle">$WERL</text>
+    <rect x="470" y="578" width="150" height="34" rx="17" fill="#FBFBEF" stroke="#171513" stroke-width="3.5"/>
+    <text x="545" y="602" class="t" font-size="18" fill="#171513" text-anchor="middle">$WerldCap</text>
   </g></svg>

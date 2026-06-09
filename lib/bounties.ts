@@ -39,7 +39,7 @@ export const bounties: Bounty[] = [
     when: "ENDS AT FINAL WHISTEL",
     emoji: "👨‍👩‍👧",
     description:
-      "take a selfie wif ur hole famly all wearin the WRONG team jersy durin the openin match. bonus points if grandma is in the iran kit watchin USA vs paraguay. confuse the entire room. post it + tag $WERL.",
+      "take a selfie wif ur hole famly all wearin the WRONG team jersy durin the openin match. bonus points if grandma is in the iran kit watchin USA vs paraguay. confuse the entire room. post it + tag $WerldCap.",
     pumpUrl: config.links.pfBounty,
   },
   {

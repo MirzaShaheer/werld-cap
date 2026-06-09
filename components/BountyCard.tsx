@@ -75,7 +75,7 @@ export default function BountyCard({
           className={`${t.btnGhost} pointer-events-none mt-3 text-center opacity-70`}
           aria-disabled="true"
         >
-          SOON™ · wach $WERL ↗
+          SOON™ · wach $WerldCap ↗
         </span>
       )}
     </article>

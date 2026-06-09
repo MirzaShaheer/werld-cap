@@ -7,17 +7,15 @@ export const config = {
   token: {
     name: "Werld Cap",
     ticker: "$WerldCap",
-    // Solana contract address (CA) for $WerldCap — paste the real one here at launch.
-    contract: "0x000",
+    // Solana contract address (CA) for $WerldCap.
+    contract: "CerkwPfJMvLy7fR3XUVEQAtAgpPqsvuL9Fg8VKr5pump",
   },
 
   links: {
-    // Pump.fun homepage (the "Buy" button target).
-    // NOTE: points at pump.fun generally until $WerldCap launches — swap to the
-    // real coin page (https://pump.fun/coin/<CA>) at launch.
-    buy: "https://pump.fun",
+    // Pump.fun coin page for $WerldCap (the "Buy" button target).
+    buy: "https://pump.fun/coin/CerkwPfJMvLy7fR3XUVEQAtAgpPqsvuL9Fg8VKr5pump",
     // Pump.fun page the "bounty windo" mirrors + every "Claim on Pumpfun" button.
-    pfBounty: "https://pump.fun",
+    pfBounty: "https://pump.fun/coin/CerkwPfJMvLy7fR3XUVEQAtAgpPqsvuL9Fg8VKr5pump",
     twitter: "https://x.com/WerldCapOnPump",
     telegram: "", // optional — leave "" to hide
   },

@@ -53,7 +53,7 @@ export const bounties: Bounty[] = [
     emoji: "📢",
     description:
       'film urself screemin "WEEERLD CAAAP" at the ref evry time he blow the whisle. min 10 screems. ur neighbours must become worryed. shaky cam mandatory.',
-    pumpUrl: config.links.pfBounty,
+    pumpUrl: "https://pump.fun/go/31ef02f7-6d57-47d9-b974-6fa2d1918bbc",
   },
   {
     id: "ofside-rule-rong",

@@ -66,7 +66,7 @@ export const bounties: Bounty[] = [
     emoji: "✏️",
     description:
       "get a paper n pen n explane the ofside rule wif a drawin. u are NOT aloud to be correct — the ronger the betta. hold it next 2 a soccr ball n post.",
-    pumpUrl: config.links.pfBounty,
+    pumpUrl: "https://pump.fun/go/3a825349-63fb-4b9c-a75d-bafcb51f4810",
   },
 
   // ───────────────── UPCOMING ─────────────────

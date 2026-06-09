@@ -7,7 +7,7 @@ export const runtime = "edge";
 // Generated 1200x630 share card for X / Telegram unfurls. Pure CSS shapes +
 // text (no emoji / no external fetch) so it always renders. Deepfried palette:
 // lime on black, fuchsia + yellow hard shadows.
-export const alt = "WERLD CAP — $WerldCap · da retard werld cup";
+export const alt = "WERLD CAP — $WERLDCAP · da retard werld cup";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -63,7 +63,7 @@ export default function Image() {
             fontWeight: 700,
           }}
         >
-          $WerldCap · real bountys · real SOL
+          $WERLDCAP · real bountys · real SOL
         </div>
 
         <div

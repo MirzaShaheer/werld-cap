@@ -33,7 +33,7 @@ export default function Hero({ t }: { t: ThemeTokens }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  💬 Telegram · @drektaf
+                  💬 Telegram Contact
                 </a>
                 <a
                   className="block border-t-2 border-black px-4 py-2.5 text-sm font-bold text-black hover:bg-orange-100"
@@ -41,7 +41,7 @@ export default function Hero({ t }: { t: ThemeTokens }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  🌐 seekjs.com
+                  🌐 Website Contact
                 </a>
               </div>
             </div>

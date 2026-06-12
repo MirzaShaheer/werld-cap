@@ -11,16 +11,41 @@ export default function Hero({ t }: { t: ThemeTokens }) {
           <img src="/logo.png" alt="" className="h-9 w-auto" /> {config.token.ticker}
         </span>
         <div className="flex flex-wrap items-center justify-end gap-2">
-          {/* builder CTA — DMs go to @drektaf on Telegram; hide on mobile to keep BUY visible */}
-          <a
-            className={`${t.btnGhost} hidden md:inline-block`}
-            href="https://t.me/drektaf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Get your own memecoin website made — DM @drektaf on Telegram"
-          >
-            get your memecoin website made
-          </a>
+          {/* builder CTA — neon-orange sticker (own style, not t.btnGhost) so it
+              pops against the lime/fuchsia brand buttons. Opens a CSS-only
+              hover/focus menu with Telegram + website. Desktop-only (hover), so
+              no client JS needed. Hidden on mobile to keep BUY visible. */}
+          <div className="group relative hidden md:block">
+            <button
+              type="button"
+              className="inline-flex items-center gap-1.5 rounded-lg border-2 border-black bg-orange-500 px-4 py-2 font-bold text-black shadow-[3px_3px_0_#000,0_0_16px_rgba(249,115,22,0.9)] transition hover:bg-orange-400 hover:shadow-[3px_3px_0_#000,0_0_22px_rgba(249,115,22,1)] group-focus-within:bg-orange-400"
+              title="Get your own memecoin website made — Telegram or seekjs.com"
+            >
+              get your memecoin website made
+              <span aria-hidden className="text-sm">▾</span>
+            </button>
+            {/* pt-2 (not mt-2) keeps a continuous hover bridge to the menu */}
+            <div className="invisible absolute right-0 top-full z-50 w-56 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="overflow-hidden rounded-lg border-2 border-black bg-white shadow-[3px_3px_0_#000]">
+                <a
+                  className="block px-4 py-2.5 text-sm font-bold text-black hover:bg-orange-100"
+                  href="https://t.me/drektaf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  💬 Telegram · @drektaf
+                </a>
+                <a
+                  className="block border-t-2 border-black px-4 py-2.5 text-sm font-bold text-black hover:bg-orange-100"
+                  href="https://seekjs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  🌐 seekjs.com
+                </a>
+              </div>
+            </div>
+          </div>
           {/* duplicates the hero "SEE DA BOUNTYS" CTA — hide on mobile to keep BUY visible */}
           <a className={`${t.btnGhost} hidden sm:inline-block`} href="#bountys">
             bountys

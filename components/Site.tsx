@@ -7,6 +7,7 @@ import WinnersHall from "./WinnersHall";
 import Footer from "./Footer";
 import ThemeSwitcher from "./ThemeSwitcher";
 import PitchBackground from "./PitchBackground";
+import BuilderPopup from "./BuilderPopup";
 
 export default function Site({
   theme,
@@ -31,6 +32,7 @@ export default function Site({
         <WinnersHall t={t} />
         <Footer t={t} />
       </div>
+      <BuilderPopup />
       {showThemeSwitcher && <ThemeSwitcher current={theme} />}
     </main>
   );

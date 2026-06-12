@@ -11,6 +11,16 @@ export default function Hero({ t }: { t: ThemeTokens }) {
           <img src="/logo.png" alt="" className="h-9 w-auto" /> {config.token.ticker}
         </span>
         <div className="flex flex-wrap items-center justify-end gap-2">
+          {/* builder CTA — DMs go to @drektaf on Telegram; hide on mobile to keep BUY visible */}
+          <a
+            className={`${t.btnGhost} hidden md:inline-block`}
+            href="https://t.me/drektaf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Get your own memecoin website made — DM @drektaf on Telegram"
+          >
+            get your memecoin website made
+          </a>
           {/* duplicates the hero "SEE DA BOUNTYS" CTA — hide on mobile to keep BUY visible */}
           <a className={`${t.btnGhost} hidden sm:inline-block`} href="#bountys">
             bountys
